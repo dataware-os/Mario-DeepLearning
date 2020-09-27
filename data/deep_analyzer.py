@@ -8,7 +8,8 @@ class DeepLearningAnalyzer(threading.Thread):
 
     def __init__(self):
         threading.Thread.__init__(self)
-    
+        self.current_state = {}
+        
     def run(self):        
         print("Starting thread with deep learning analyzer")
         self._end_signal = False

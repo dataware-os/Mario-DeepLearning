@@ -1370,9 +1370,6 @@ class Level1(tools._State):
         elif self.overhead_info_display.time == 0:
             self.next = c.TIME_OUT
         else:
-            if self.mario.rect.x > 3670 \
-                    and self.game_info[c.CAMERA_START_X] == 0:
-                self.game_info[c.CAMERA_START_X] = 3440
             self.next = c.LOAD_SCREEN
 
 
@@ -1442,7 +1439,7 @@ class Level1(tools._State):
         self.coin_box_group.draw(self.level)
         self.sprites_about_to_die_group.draw(self.level)
         self.shell_group.draw(self.level)
-        #self.check_point_group.draw(self.level)
+        self.check_point_group.draw(self.level)
         self.brick_pieces_group.draw(self.level)
         self.flag_pole_group.draw(self.level)
         self.mario_and_enemy_group.draw(self.level)
