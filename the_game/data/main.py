@@ -7,9 +7,6 @@ import threading
 
 def main(deep=False):
     """Add states to control here."""
-    deep_controller = deep_analyzer.DeepLearningAnalyzer()
-    deep_controller.start()
-
     run_it = tools.Control(setup.DEEP_LEARNING_CAPTION)            
     state_dict = {c.MAIN_MENU: main_menu.Menu(deep_mode=deep),
                 c.LOAD_SCREEN: load_screen.LoadScreen(deep_mode=deep),
