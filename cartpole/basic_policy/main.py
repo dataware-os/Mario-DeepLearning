@@ -1,5 +1,4 @@
 """
-
 ENV docs:
 
     Observation:
@@ -41,7 +40,7 @@ def basic_policy(obs):
     return 0 if angle < 0 else 1 # right == 1
 
 
-if __name__=="__main__":
+if __name__== "__main__":
     env = gym.make('CartPole-v1')
     env.seed(55)
     obs = env.reset()
