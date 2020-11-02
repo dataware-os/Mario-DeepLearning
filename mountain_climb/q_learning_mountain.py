@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 env = gym.make("MountainCar-v0")
-# env.reset()
 
 LEARNING_RATE = 0.1
 DISCOUNT = 0.95 # how important are future actions (weigth)
@@ -74,7 +73,6 @@ for episode in range(EPISODES):
         if not done:
             max_future_q = np.max(q_table[new_discrete_state])
             current_q = q_table[discrete_state + (action, )]
-
             new_q = (1-LEARNING_RATE) * current_q + LEARNING_RATE * (reward + DISCOUNT * max_future_q)
             q_table[discrete_state + (action,)] = new_q # we update q table after taking an action...
         elif new_state[0] >= env.goal_position:
