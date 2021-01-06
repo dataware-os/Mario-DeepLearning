@@ -100,7 +100,7 @@ env.close()
 # plot will start at (0, -200) as there are no rewards for
 # actions, where max_episodes_steps are 200...
 # And the reward is 0, for bad step it's -1
-# So if y==-200 it means that agent didn't make it to the cloud.
+# So if y==-200 it means that agent didn't make it to the flag.
 
 plt.plot(aggr_ep_rewards['ep'], aggr_ep_rewards['avg'], label="avg")
 plt.plot(aggr_ep_rewards['ep'], aggr_ep_rewards['min'], label="min")
