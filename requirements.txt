@@ -36,7 +36,7 @@ opencv-python==4.4.0.44
 opt-einsum==3.3.0
 parso==0.7.1
 pickleshare==0.7.5
-Pillow==7.2.0
+Pillow==9.0.0
 prompt-toolkit==3.0.8
 protobuf==3.13.0
 pyasn1==0.4.8
