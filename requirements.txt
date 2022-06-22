@@ -30,7 +30,7 @@ kiwisolver==1.2.0
 Markdown==3.3.1
 matplotlib==3.3.2
 nes-py==8.1.6
-numpy==1.19.5
+numpy==1.22.0
 oauthlib==3.1.0
 opencv-python==4.4.0.44
 opt-einsum==3.3.0
